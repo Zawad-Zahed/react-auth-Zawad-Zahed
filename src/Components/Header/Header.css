@@ -1,0 +1,17 @@
+.logoStyle {
+  height: 4em;
+  width: 6em;
+}
+.navBar {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  color: rgb(34, 32, 32);
+}
+h6 {
+  color: white;
+}
+.bgImage {
+  background-image: url(../../ticketImages/BgImage.png);
+  height: auto;
+  width: 100%;
+}
