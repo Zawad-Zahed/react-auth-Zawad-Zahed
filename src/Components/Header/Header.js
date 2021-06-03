@@ -38,11 +38,10 @@ const Header = () => {
                   <h6>Contact</h6>
                 </Link>
                 {loggedInUser.email ? (
-                  <p>{loggedInUser.name}</p>
+                  <h6>{loggedInUser.name}</h6>
                 ) : (
                   <Link to="/login" className="nav-link active ">
                     <button className="btn btn-danger rounded">
-                      {" "}
                       <h6>Login</h6>
                     </button>
                   </Link>
