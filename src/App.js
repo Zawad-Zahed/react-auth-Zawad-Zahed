@@ -9,6 +9,7 @@ import { createContext, useState } from "react";
 import Destination from "./Components/Destination/Destination";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import NotFound from "./Components/NotFound/NotFound";
+import Contact from "./Components/Contact/Contact";
 
 export const UserContext = createContext();
 
@@ -26,11 +27,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-
             <Route path="/login">
               <Login></Login>
             </Route>
-
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
             <PrivateRoute path="/destination/:id">
               <Destination></Destination>
             </PrivateRoute>

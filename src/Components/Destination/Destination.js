@@ -52,12 +52,23 @@ const Destination = () => {
   };
 
   return (
-    <Container className="container text-color">
+    <Container className="container text-color ">
       <Row>
         <Col>
           {!press && (
-            <form onSubmit={handlePress}>
-              <label htmlFor="pickTo">Pick to</label>
+            <form className="text-white" onSubmit={handlePress}>
+              <label htmlFor="pickFrom"> Pick From </label>
+              <input
+                type="text"
+                name="pickFrom"
+                onBlur={handleBlur}
+                placeholder="Pick From"
+                id="pick"
+                required
+              />
+              <br />
+              <br />
+              <label htmlFor="pickTo"> Pick To </label>
               <input
                 type="text"
                 name="pickTo"
@@ -67,16 +78,10 @@ const Destination = () => {
                 required
               />
               <br />
-              <label htmlFor="pickFrom">Pick from</label>
-              <input
-                type="text"
-                name="pickFrom"
-                onBlur={handleBlur}
-                placeholder="Pick from"
-                id="pick"
-                required
-              />
-              <br /> <input type="submit" value="search" />
+              <br />
+              <button className="btn btn-light btn-lg">
+                <input type="submit" value="search" />
+              </button>
             </form>
           )}
 
@@ -84,8 +89,12 @@ const Destination = () => {
             <div className="flex text-white m-2 p-2 justify-content-evenly ">
               <h4>
                 {" "}
-                to {location.pickTo} from {location.pickFrom}{" "}
+                From {location.pickFrom}
+                <br />
+                <br />
+                To {location.pickTo}{" "}
               </h4>
+              <br />
               <div className="d-flex text-white">
                 <img
                   src={imageTicket}
@@ -96,6 +105,7 @@ const Destination = () => {
                 />
                 <p>Ticket 1 : {price}</p>
               </div>
+
               <div className="d-flex">
                 <img
                   src={imageTicket}
@@ -104,8 +114,10 @@ const Destination = () => {
                   className="img-fluid"
                   alt=""
                 />
-                <p>Ticket 2 : {price}</p>
+
+                <p> Ticket 2 : {price}</p>
               </div>
+
               <div className="d-flex">
                 <img
                   src={imageTicket}
@@ -114,7 +126,7 @@ const Destination = () => {
                   className="img-fluid"
                   alt=""
                 />
-                <p>Ticket 3 : {price}</p>
+                <p> Ticket 3 : {price}</p>
               </div>
             </div>
           )}

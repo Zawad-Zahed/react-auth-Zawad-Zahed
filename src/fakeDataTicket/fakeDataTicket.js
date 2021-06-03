@@ -1,4 +1,4 @@
-import logo from "../ticketImages/ticketLogo.png"
+import logo from "../ticketImages/ticketLogo.png";
 
 const fakeDataTicket = [
   {
@@ -22,7 +22,7 @@ const fakeDataTicket = [
   {
     id: 4,
     name: "ANNUAL PASS",
-   image: logo,
+    image: logo,
     price: "$550",
   },
 ];

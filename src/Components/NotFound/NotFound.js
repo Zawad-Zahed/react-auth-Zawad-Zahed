@@ -9,10 +9,10 @@ const NotFound = () => {
         <h2>Buy Ticket</h2>
         <br />
         <br />
-        <p>
+        <h3>
           After that you can see your{" "}
-          <span className="text-primary"> Destination </span>{" "}
-        </p>
+          <span className="text-primary">Destination</span>{" "}
+        </h3>
       </div>
     </div>
   );
