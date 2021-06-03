@@ -8,7 +8,7 @@ import "./Header.css";
 const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
-    <div className="bgImage">
+    <div className="">
       <div className="navBar container">
         <nav className="navbar navbar-expand-lg navbar-light flex">
           <div className="container-fluid">
